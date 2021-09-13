@@ -17,5 +17,11 @@ console.log('Second');
 
 setTimeout(function() {
     console.log('First');
-    }, 3000);
+    }, 8080);
+
  console.log('Second');
+ app.all('/secret', function(req, res, next) {
+    console.log('Accessing the secret section ...');
+    next(); // pass control to the next handler
+  });
+  
