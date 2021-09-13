@@ -1,4 +1,5 @@
 const express = require('express');
+const router = express.Router();
 const app = express();
 const port = 8080;
 
@@ -24,4 +25,7 @@ setTimeout(function() {
     console.log('Accessing the secret section ...');
     next(); // pass control to the next handler
   });
+  const wiki = require('./wiki.js');
+  // ...
+  app.use('/wiki', wiki);  
   
