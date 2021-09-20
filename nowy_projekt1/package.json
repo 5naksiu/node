@@ -1,0 +1,17 @@
+{
+  "name": "nowy_projekt1",
+  "version": "1.0.0",
+  "description": "Prosta strona express z szablonami",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "Kewin Mejer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "path": "^0.12.7"
+  }
+}
